@@ -1,0 +1,24 @@
+global:
+  image:
+    registry: docker.io
+
+nats:
+  resources:
+    requests:
+      cpu: 5m
+      memory: 16Mi
+  jetstream:
+    enabled: false
+
+cluster:
+  enabled: false
+
+replicaCount: 1
+
+auth:
+  enabled: false
+
+promExporter:
+  enabled: false
+  podMonitor:
+    enabled: false
